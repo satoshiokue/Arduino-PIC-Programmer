@@ -43,3 +43,15 @@ gcc -Wall pp3.c -o pp3
 -s : 待ち時間[ms]  
 -v : 実行状態表示  
 -t : ターゲット  
+
+## 書き込み手順
+
+1. EMUZ80の電源を切り、CPUを外す  
+2. ArduinoとEMUZ80を接続。スライドスイッチをSTBY。リセットボタンを押してLED点滅を確認する  
+3. EMUZ80の電源を入れる  
+4. ArduinoのスライドスイッチをPROGにする  
+5. Arduinoを接続しているコンピュータから書き込みコマンドpp3を実行する  
+6. ArduinoのスライドスイッチをSTBYに戻し、RESETボタンを押すとArduinoのLEDが点滅を再開する  
+
+
+

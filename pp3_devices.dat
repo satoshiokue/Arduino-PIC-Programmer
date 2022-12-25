@@ -1,0 +1,10 @@
+# PP3 device database for version 0.99
+#
+# name   flash page  ID  mask family_type
+# flash size and page size in bytes 1 WORD = 2 BYTES
+#
+18f47q43  131072  128 74A0 FFFF CF_P18F_Q43
+#
+18f47q83  131072  128 990A FFFF CF_P18F_Q8x
+18f47q84  131072  128 9904 FFFF CF_P18F_Q8x
+

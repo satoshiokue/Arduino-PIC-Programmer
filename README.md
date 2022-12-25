@@ -53,5 +53,7 @@ gcc -Wall pp3.c -o pp3
 5. Arduinoを接続しているコンピュータから書き込みコマンドpp3を実行する  
 6. ArduinoのスライドスイッチをSTBYに戻し、RESETボタンを押すとArduinoのLEDが点滅を再開する  
 
-
-
+## 資料
+PIC18-Q43 Family Programming Specification - DS40002079E  
+PIC18-Q83/84 Family Programming Specification - DS40002137D  
+PIC18F2X/4XQ10 Memory Programming Specification - DS40001874H  

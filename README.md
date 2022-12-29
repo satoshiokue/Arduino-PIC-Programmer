@@ -2,9 +2,11 @@
 
 Arduino UNOを使用したPIC18F47Q43/Q83/Q84専用の書き込みシステムです。  
 
-![Arduino-PIC](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/Arduino-PIC.jpeg)
+![Arduino-PIC](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/Arduino-PIC.jpeg)  
+Arduino UNO  
 
-![MAKER UNO](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/MakerUNO.jpeg)
+![MAKER UNO](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/MakerUNO.jpeg)  
+MAKER UNO
 
 こちらのプログラムを改変して作成しました。  
 FLASHING THE FIRMWARE WITH AN ARDUINO UNO AS PROGRAMMER  
@@ -13,6 +15,9 @@ https://hackaday.io/project/177988-68k-mbc-a-3-ics-68008-homebrew-computer/detai
 https://github.com/jaromir-sukuba/a-p-prog
 
 ## 部品
+MAKER UNO - 秋月電子通商
+https://akizukidenshi.com/catalog/g/gM-16285/
+
 ICSPシールド - オレンジピコショップ  
 https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-055.html
 
@@ -24,7 +29,9 @@ https://store.shopping.yahoo.co.jp/orangepicoshop/PICO-X-122.html
 
 抵抗  
 R1-R3 470Ω  
-R4 1k
+R4 1k  
+
+ピンヘッダー  
 
 ## ソフトウェア
 pp.inoをArduino UNOに書き込んでください。  
@@ -36,9 +43,14 @@ gcc -Wall pp3.c -o pp3
 
 実行ファイルpp3 (pp3.exe)とpp3_devices.datは同じ場所に置いて実行します。
 
-
+PIC DEVICE IDを確認
 ```
-./pp3 -c /dev/tty.usbmodem22301 -s 1700 -v 3 -t 18f47q43 emuz80_pic.hex
+./pp3 -c /dev/tty.usbserial-2220 -s 1700 -p -n -t 18f47q43
+```
+
+PICにHEXファイルを書き込み
+```
+./pp3 -c /dev/tty.usbserial-2220 -s 1700 -v 3 -t 18f47q43 emuz80_pic.hex
 ```
 
 -c : Arduino UNOを指定  
@@ -49,9 +61,9 @@ gcc -Wall pp3.c -o pp3
 ## 書き込み手順
 
 1. EMUZ80の電源を切り、CPUを外す  
-2. ArduinoとEMUZ80を接続。スライドスイッチをSTBY。リセットボタンを押してLED点滅を確認する  
+2. ArduinoとEMUZ80を接続。ICSPシールドのスライドスイッチをSTBY。Arduinoのリセットボタンを押してLED点滅を確認する  
 3. EMUZ80の電源を入れる  
-4. ArduinoのスライドスイッチをPROGにする  
+4. ICSPシールドのスライドスイッチをPROGにする  
 5. Arduinoを接続しているコンピュータから書き込みコマンドpp3を実行する  
 6. ArduinoのスライドスイッチをSTBYに戻し、RESETボタンを押すとArduinoのLEDが点滅を再開する  
 

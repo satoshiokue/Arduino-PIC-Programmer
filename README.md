@@ -1,6 +1,10 @@
 # Arduino-PIC-Programmer
 
-Arduino UNOを使用したPIC18F47Q43/Q83/Q84専用の書き込みシステムです。  
+Arduino UNOを使用したPIC書き込みシステムです。  
+3種類のPICに書き込みできます。  
+PIC18F47Q43  
+PIC18F47Q83  
+PIC18F47Q84  
 
 ![Arduino-PIC](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/Arduino-PIC.jpeg)  
 Arduino UNO  
@@ -15,7 +19,7 @@ https://hackaday.io/project/177988-68k-mbc-a-3-ics-68008-homebrew-computer/detai
 https://github.com/jaromir-sukuba/a-p-prog
 
 ## 部品
-MAKER UNO - 秋月電子通商
+MAKER UNO - 秋月電子通商  
 https://akizukidenshi.com/catalog/g/gM-16285/
 
 ICSPシールド - オレンジピコショップ  

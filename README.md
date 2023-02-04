@@ -6,11 +6,14 @@ PIC18F47Q43
 PIC18F47Q83  
 PIC18F47Q84  
 
-![Arduino-PIC](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/Arduino-PIC.jpeg)  
+![Arduino-PIC](Arduino-PIC.jpeg)  
 Arduino UNO  
 
-![MAKER UNO](https://github.com/satoshiokue/Arduino-PIC-Programmer/blob/main/MakerUNO.jpeg)  
+![MAKER UNO](MakerUNO.jpeg)  
 MAKER UNO
+
+![Arduino-Leonardo](Arduino-Leonardo.jpeg)  
+Arduino Leonardo
 
 こちらのプログラムを改変して作成しました。  
 FLASHING THE FIRMWARE WITH AN ARDUINO UNO AS PROGRAMMER  
